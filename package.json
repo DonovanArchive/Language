@@ -1,0 +1,39 @@
+{
+  "name": "@uwu-codes/language",
+  "version": "1.0.1",
+  "description": "A language parser for my projects.",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "build": "rm -rf build && npm run lint && tsc && echo Build Finished",
+    "lint": "eslint src --ext .ts --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UwUCode/Language.git"
+  },
+  "author": "Donovan_DMC <hewwo@yiff.rocks> (https://donovan.is.gay)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/UwUCode/Language/issues"
+  },
+  "homepage": "https://github.com/UwUCode/Language#readme",
+  "dependencies": {
+    "@uwu-codes/utils": "^1.0.21",
+    "dot-object": "^2.1.4",
+    "fs-extra": "^9.1.0",
+    "json5": "^2.2.0"
+  },
+  "devDependencies": {
+    "@types/dot-object": "^2.1.2",
+    "@types/fs-extra": "^9.0.9",
+    "@types/json5": "^2.2.0",
+    "@types/node": "^14.14.37",
+    "typescript": "^4.2.3"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}

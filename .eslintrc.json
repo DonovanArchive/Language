@@ -1,0 +1,7 @@
+{
+	"extends": "@uwu-codes/eslint-config",
+	"rules": {
+		"prefer-arrow-callback": "off",
+		"no-invalid-this": "off"
+	}
+}
