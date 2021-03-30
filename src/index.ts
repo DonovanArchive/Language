@@ -105,4 +105,9 @@ export default class Language {
 		str = str.replace(b, l);
 		return this.parseString(lang, str);
 	}
+
+	static exists<L extends string = string>(lang: L, str: string | Array<string>): boolean {
+		if (Array.isArray(str)) return str.every(Language.exists.bind(Language, lang));
+		return Language.get(lang, str, [], true) !== null;
+	}
 }
