@@ -1,6 +1,6 @@
 {
   "name": "@uwu-codes/language",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A language parser for my projects.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/UwUCode/Language#readme",
   "dependencies": {
-    "@uwu-codes/utils": "^1.0.26",
+    "@uwu-codes/utils": "^1.0.27",
     "dot-object": "^2.1.4",
     "fs-extra": "^9.1.0",
     "json5": "^2.2.0"
@@ -35,5 +35,13 @@
   "private": false,
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "engines": {
+    "node": ">=16.x",
+    "npm": ">=7.x"
+  },
+  "os": [
+    "linux"
+  ],
+  "engineStrict": true
 }
