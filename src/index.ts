@@ -2,7 +2,7 @@ import * as fs from "fs-extra";
 import dot from "dot-object";
 import JSON5 from "json5";
 import { AnyObject, Strings } from "@uwu-codes/utils";
-import path from "path";
+import path from "node:path";
 
 /*
 FORMAT (parsing):
